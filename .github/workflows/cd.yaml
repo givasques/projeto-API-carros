@@ -20,7 +20,7 @@ jobs:
                 password: ${{ secrets.DOCKERHUB_TOKEN }}
 
             - name: Construção da Imagem
-              run: docker build -t givasques1101/checkpoint1-microservices:latest .
+              run: docker build -t givasques1101/carros-api:latest .
 
             - name: Push da Imagem no DockerHub
-              run: docker push givasques1101/checkpoint1-microservices:latest
+              run: docker push givasques1101/carros-api:latest
